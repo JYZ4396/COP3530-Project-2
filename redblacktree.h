@@ -29,7 +29,6 @@ private:
     void colorSwitch(Node* node);
     void configuration(Node*& node, Node*& parent, Node*& grandparent, Node*& uncle, bool& first_right, bool& then_left);
     void blackUncle(Node*& node, Node*& parent, Node*& grandparent, Node*& uncle, bool& first_right, bool& then_left);
-    void balance(Node* node);
 
     //for convenience, i decide to use reverseInorder to get the top n cleanupactivity
     //specifically, reverseInorder will return a vector that sorted the cleanupactivity
