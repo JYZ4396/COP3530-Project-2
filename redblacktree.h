@@ -41,7 +41,7 @@ private:
         void insert(const CleanupActivity& activity);
 
         std::vector<Node> topcount;
-        void reverseInorder(Node* node, const int n, std::vector<Node>& result);
+        void reverseInorder(Node* node, const int n);
 
 };
 #endif //REDBLACKTREE_H
