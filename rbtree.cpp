@@ -200,3 +200,13 @@ void RedBlackTree::reverseInorder(Node* node, const int n) {
 
     reverseInorder(node->left, n);
 }
+
+//Comment by Jiayi:
+//at the beginning I didn't design all function well and gave instructions
+//to write reverseInorder(Node* node, const int n). I thought to call this function
+//in int main and get the top counts. However, I forgot int main cannot access the 
+//private parameter, so this function cannot be used as it requires root, which is private
+//I have to add this additional fucntion to call reverseInorder in the int main.
+void RedBlackTree::getTopCount(int n){
+    reverseInorder(root, n);
+}
