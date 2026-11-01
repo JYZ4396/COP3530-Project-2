@@ -41,6 +41,7 @@ private:
 
         std::vector<Node> topcount;
         void reverseInorder(Node* node, const int n);
+        void getTopCount(int n);
 
 };
 #endif //REDBLACKTREE_H
