@@ -104,7 +104,7 @@ int main() {
     //this is the setting for chrono that check the duration of code
     //I copy paste the code from the website and add the task I want to check
     //the executation time at the middle(correct) position
-    //this is the cppreference page: https://www.geeksforgeeks.org/cpp/chrono-in-c/
+    //this is the geeksforgeeks page: https://www.geeksforgeeks.org/cpp/chrono-in-c/
 
     auto start = high_resolution_clock::now();
 
