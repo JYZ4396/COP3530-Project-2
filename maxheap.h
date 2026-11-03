@@ -31,6 +31,14 @@ class MaxHeap{
         //this topcount function will call extractMax n times and return
         //a vector of cleanupactivity which have largest total count
         std::vector<CleanupActivity> topcount(int n);
+
+        bool isEmpty() {
+            return heap.empty();
+        }
+
+        int size() {
+            return heap.size();
+        }
 };
 
 
