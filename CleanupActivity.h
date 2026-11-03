@@ -27,12 +27,7 @@ struct CleanupActivity {
         totalCount=0;
     }
 
-    CleanupActivity(
-        const std::string& id,
-        const std::string& date,
-        const std::string& location,
-        long long totalCount
-    ) {
+    CleanupActivity(const std::string& id,const std::string& date,const std::string& location,int totalCount){
         this->id=id;
         this->date=date;
         this->location=location;
