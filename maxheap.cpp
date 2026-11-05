@@ -38,3 +38,33 @@ void MaxHeap::heapifyDown(int index) {
         index = largest;
     }
 }
+
+void MaxHeap::insert(CleanupActivity activity) {
+    heap.push_back(activity);
+    heapifyUp(heap.size() - 1);
+}
+
+CleanupActivity MaxHeap::extractMax() {
+    if (heap.empty()) {
+        throw out_of_range("extractMax on empty heap");
+    }
+
+    CleanupActivity top = heap.front();
+    heap.front() = heap.back();
+    heap.pop_back();
+
+    if (!heap.empty()) {
+        heapifyDown(0);
+    }
+
+    return top;
+}
+
+vector<CleanupActivity> MaxHeap::topcount(int n)){
+    MaxHeap copy = *this;
+    vector<CleanupActivity> result;
+    for (int i = 0; i < n && !copy.isEmpty(); ++i) {
+        result.push_back(copy.extractMax());
+    }
+    return result;
+}

@@ -21,15 +21,18 @@ class MaxHeap{
 
     public:
 
-
+		//Complexity: O(log n)
         void insert(const CleanupActivity& activity);
 
         //My idea is set this extractmax function
         //after calling it, it will return the top node
         //then it will delete the top node, and heapifydown
+		//Complexity: O(log n)
         CleanupActivity extractMax();
+
         //this topcount function will call extractMax n times and return
         //a vector of cleanupactivity which have largest total count
+		//Complexity: O(n + nlog(n))
         std::vector<CleanupActivity> topcount(int n);
 
         bool isEmpty() {
