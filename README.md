@@ -6,7 +6,7 @@ This C++ project compares a Max Heap and a Red-Black Tree for finding the 20 cle
 
 1. Download whole repo as zip file.
 2. Put everything into a folder.
-3. Open **CLion**, choose **Open**, and select the src folder.
+3. Open **CLion**, choose **Open**, and select the **src** folder.
 4. Wait for CLion to load the CMake project.
 6. Click **Run**.
 
